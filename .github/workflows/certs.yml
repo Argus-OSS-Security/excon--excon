@@ -6,11 +6,12 @@
 # For more information see: https://github.com/marketplace/actions/setup-ruby-jruby-and-truffleruby
 name: Check for updated cert bundle
 
-on:
-  schedule:
-    - cron: "30 1 * * *"
-  workflow_dispatch:
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   schedule:
+#     - cron: "30 1 * * *"
+#   workflow_dispatch:
+# 
 permissions:
   contents: read
 
